@@ -1,0 +1,14 @@
+User Authentication: Implement user registration and login functionality. Users should be able to create accounts and authenticate themselves. Done
+Task Creation: Users should be able to create new tasks with details such as a title, description, assigned team member(s), and due date. Done
+Task Assignment: Enable users to assign tasks to specific team members. Each task should have one or more assignees. Done
+Progress Tracking: Allow users to update the status or progress of a task (e.g., not started, in progress, completed). Done
+Due Date Management: Implement due date tracking for tasks and provide notifications or reminders for approaching or overdue tasks.
+Task List: Provide a list view to display all tasks with relevant information, such as the task title, assignee, due date, and status. Done
+
+
+
+Task Comments: Allow users to leave comments on tasks to facilitate collaboration and communication.Done
+Task Priority: Implement a priority system for tasks (e.g., high, medium, low) and allow users to sort tasks based on priority.Done
+Task Labels or Tags: Enable users to add labels or tags to tasks for better organization and categorization.Done
+Task Filters and Search: Implement filters and search functionality to help users find specific tasks based on different criteria (e.g., due date, assignee, status).Done
+User Notifications: Set up a notification system to inform users about task updates, comments, or approaching due dates.

@@ -1,0 +1,11 @@
+{% extends 'base/main.html' %}
+{% block content %}
+<div class="notification-detail">
+    <h2>Notification Detail</h2>
+    <div class="notification-content">
+        <p><strong>Message:</strong> {{ notification.message }}</p>
+        <p><strong>Task:</strong> <a href="{% url 'task-detail' notification.task.pk %}">{{ notification.task.title }}</a></p>
+        <p><strong>Created:</strong> {{ notification.created_at }}</p>
+    </div>
+</div>
+{% endblock %}

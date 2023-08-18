@@ -1,0 +1,28 @@
+{% extends 'base/main.html'%}
+{% block content %}
+<h1>Task: {{task}}</h1>
+<h2>Comments</h2>
+<ul>
+  {% for comment in comments %}
+    <li>{{ comment.comment_text }} - by {{ comment.user.username }} at {{ comment.timestamp }}</li>
+  {% empty %}
+    <li>No comments yet.</li>
+  {% endfor %}
+</ul>
+
+<h2>Add Comment</h2>
+<form method="post">
+  {% csrf_token %}
+  <textarea name="comment_text" placeholder="Add a comment"></textarea>
+  <button type="submit">Add Comment</button>
+</form>
+<h2>Tags</h2>
+<ul>
+  {% for tag in task.tags.all %}
+    <li>{{ tag }}</li>
+  {% empty %}
+    <li>No tags for this task.</li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}
